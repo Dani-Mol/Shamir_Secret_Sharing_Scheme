@@ -7,10 +7,10 @@ class AplicacionShamir:
         self.root = root
         self.root.title("Esquema de Shamir")
         self.root.geometry("400x300")
-        self.root.config(bg="#f0f8ff")
+        self.root.config(bg="#252525")
 
         # Título
-        tk.Label(self.root, text="Esquema de Shamir", font=("Helvetica", 16), bg="#f0f8ff").pack(pady=20)
+        tk.Label(self.root, text="Esquema de Shamir", font=("Helvetica", 16), bg="#252525").pack(pady=20)
 
         # Botones
         tk.Button(self.root, text="Cifrar Archivo", command=self.abrir_cifrado, bg="#87cefa", font=("Arial", 12)).pack(pady=10)
@@ -163,3 +163,4 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = AplicacionShamir(root)
     root.mainloop()
+    
